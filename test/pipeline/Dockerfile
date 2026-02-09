@@ -16,7 +16,6 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 RUN uv sync --locked
 
 # Copy application code
-COPY pipeline.py pipeline.py
-
+COPY load_yellow_taxi_data.py service-account.json ./
 # Set entry point
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "load_yellow_taxi_data.py"]

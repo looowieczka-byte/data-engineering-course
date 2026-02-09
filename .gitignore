@@ -1,8 +1,11 @@
 *.paraquet
+*.env_encoded
+service-account.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
+*.json
 
 # C extensions
 *.so
